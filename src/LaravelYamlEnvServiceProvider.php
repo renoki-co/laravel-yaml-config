@@ -1,10 +1,10 @@
 <?php
 
-namespace RenokiCo\:package_namespace;
+namespace RenokiCo\LaravelYamlEnv;
 
 use Illuminate\Support\ServiceProvider;
 
-class :package_service_provider extends ServiceProvider
+class LaravelYamlEnvServiceProvider extends ServiceProvider
 {
     /**
      * Boot the service provider.
@@ -14,11 +14,11 @@ class :package_service_provider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/../config/config.php' => config_path('config.php'),
-        ], 'config');
+            __DIR__.'/../config/yaml-env.php' => config_path('yaml-env.php'),
+        ], 'yaml-env');
 
         $this->mergeConfigFrom(
-            __DIR__.'/../config/config.php', 'config'
+            __DIR__.'/../config/yaml-env.php', 'yaml-env'
         );
     }
 
