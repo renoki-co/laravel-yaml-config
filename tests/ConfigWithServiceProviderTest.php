@@ -44,16 +44,16 @@ class ConfigWithServiceProviderTest extends TestCase
     {
         $this->refreshApplication();
 
-        $originalApp = $this->app['config']->get('app');
+        $originalMailgun = $this->app['config']->get('services.mailgun');
         $originalDatabaseConnections = $this->app['config']->get('database.connections');
         $originalCustomConfig = $this->app['config']->get('custom');
 
         file_put_contents(
             base_path('.laravel.yaml'),
             <<<'YAML'
-            app:
-              name: Testing YAML
-              timezone: Europe/Bucharest
+            services:
+              mailgun:
+                domain: test.local
             database:
               connections:
                 mysql:
@@ -75,10 +75,9 @@ class ConfigWithServiceProviderTest extends TestCase
         $this->artisan('config:cache');
         $this->refreshApplication();
 
-        $this->assertSame(array_merge($originalApp, [
-            'name' => 'Testing YAML',
-            'timezone' => 'Europe/Bucharest',
-        ]), $this->app['config']->get('app'));
+        $this->assertSame(array_merge($originalMailgun, [
+            'domain' => 'test.local',
+        ]), $this->app['config']->get('services.mailgun'));
 
         $this->assertNotSame(
             $originalDatabaseConnections,
