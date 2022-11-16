@@ -4,13 +4,19 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Location
+    | File Locations
     |--------------------------------------------------------------------------
     |
-    | The location of the file to load extra config from.
+    | The list of locations to load configurations from.
+    | The list is processed in the given order, from top to the bottom.
     |
     */
 
-    'location' => base_path('.config.yaml'),
+    'locations' => [
+        ['path' => base_path('.laravel.defaults.yaml')],
+        ['path' => base_path('.laravel.defaults.yml')],
+        ['path' => base_path('.laravel.yaml')],
+        ['path' => base_path('.laravel.yml')],
+    ],
 
 ];
