@@ -3,7 +3,7 @@ Laravel YAML Config
 
 ![CI](https://github.com/renoki-co/laravel-yaml-config/workflows/CI/badge.svg?branch=master)
 [![codecov](https://codecov.io/gh/renoki-co/laravel-yaml-config/branch/master/graph/badge.svg)](https://codecov.io/gh/renoki-co/laravel-yaml-config/branch/master)
-[![StyleCI](https://github.styleci.io/repos/:styleci_code/shield?branch=master)](https://github.styleci.io/repos/:styleci_code)
+[![StyleCI](https://github.styleci.io/repos/47393870/shield?branch=master)](https://github.styleci.io/repos/47393870)
 [![Latest Stable Version](https://poser.pugx.org/renoki-co/laravel-yaml-config/v/stable)](https://packagist.org/packages/renoki-co/laravel-yaml-config)
 [![Total Downloads](https://poser.pugx.org/renoki-co/laravel-yaml-config/downloads)](https://packagist.org/packages/renoki-co/laravel-yaml-config)
 [![Monthly Downloads](https://poser.pugx.org/renoki-co/laravel-yaml-config/d/monthly)](https://packagist.org/packages/renoki-co/laravel-yaml-config)
