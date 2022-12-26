@@ -13,7 +13,7 @@
     ],
     "require": {
         "ext-yaml": "*",
-        "laravel/framework": "^9.35"
+        "laravel/framework": "^9.45"
     },
     "autoload": {
         "psr-4": {
