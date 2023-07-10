@@ -32,7 +32,7 @@
         "mockery/mockery": "^1.5",
         "orchestra/testbench": "^7.0",
         "orchestra/testbench-core": "^7.0",
-        "phpunit/phpunit": "^9.5.25"
+        "phpunit/phpunit": "^9.6.10"
     },
     "config": {
         "sort-packages": true
