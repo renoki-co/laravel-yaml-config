@@ -91,7 +91,7 @@ clusters:
 While you shouldn't commit your `.laravel.yaml` file, you can commit a `.laravel.defaults.yaml` file that can contain defaults for specific configs you have declared:
 
 ```bash
-touch .laravel.config.yaml
+touch .laravel.defaults.yaml
 ```
 
 ```yaml
